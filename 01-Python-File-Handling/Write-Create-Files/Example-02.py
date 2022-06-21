@@ -6,6 +6,7 @@ print("-----")
 
 f = open("demofile.txt", "w")
 f.write("Woops! This Line has overwritten all content in the text file!")
+f.close()
 
 f = open("demofile.txt", "r")
 print(f.read())
