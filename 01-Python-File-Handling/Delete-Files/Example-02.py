@@ -1,15 +1,15 @@
 import os
 
-if os.path.exists("myExample0-2.txt"):
-    print("file myExample0-1.txt already exists in the current directory.")
-    # We will now delete the file so that it will create the file every other time the program is ran.
-    os.remove("myExample0-1.txt")
-    if os.path.exists("myExample0-1.txt"):
+if os.path.exists("./myExample0-2"):
+    print("The folder myExample0-2 in the current directory will now be removed.")
+    # We will now delete the folder.
+    os.rmdir("myExample0-2")
+    if os.path.exists("./myExample0-2"):
         print("An exception occurred")
     else:
-        print("myExample0-1.txt has been removed. Please rerun the program to see the file being created.")
+        print("myExample0-2 folder has been removed.")
 else:
-    f = open("myExample0-1.txt", "w")
-    f.close()
-    # "x" - will create a file if the specified file does not exist.
-    print("if you check the current directory \n a text file with name myExample0-1 has been created.")
+    os.mkdir("myExample0-2")
+    # We will create the folder so that it can be deleted every other time the program is ran.
+    print("If you check the current directory\na folder named myExample0-2 has been created.\n" +
+          "Please rerun the program to see the folder being created.")
