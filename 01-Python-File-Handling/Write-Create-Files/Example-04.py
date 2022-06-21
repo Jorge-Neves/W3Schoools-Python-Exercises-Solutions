@@ -1,7 +1,7 @@
 import os
 
 if os.path.exists("myExample0-4.txt"):
-    print("file myExample0-3.txt already exists in the current directory.")
+    print("file myExample0-4.txt already exists in the current directory.")
     # We will now delete the file so that it will create the file every other time the program is ran.
     os.remove("myExample0-4.txt")
     if os.path.exists("myExample0-4.txt"):
