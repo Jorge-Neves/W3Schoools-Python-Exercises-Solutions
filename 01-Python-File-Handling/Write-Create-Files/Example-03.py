@@ -1,17 +1,20 @@
-f = open("demofile03.txt", "r")
-print(f.read(3))
+import os
 
-# print(f.read(3)) will return the first 3 characters of the file
+try:
+    f = open("myExample0-3.txt", "x")
+    f.close()
+except:
+    print("file myExample0-3.txt already exists in the current directory.")
+    # We will now delete the file so that it will create the file every other time the program is ran.
+    if os.path.exists("myExample0-3.txt"):
+        os.remove("myExample0-3.txt")
+        print("myExample0-3.txt has been removed. Please rerun the the program to the file being created.")
+    else:
+        print("An exception occured.")
 
-print(f.read(3))
-print(f.read(3))
 
-# the subsequent print(f.read(3)) will continue reading the next 3 characters of the file
+if os.path.exists("myExample0-3.txt"):
+    print("if you check the current directory \n a text file with name myExample0-3 has been created.")
 
-f.close()
-f = open("demofile03.txt", "r")
 
-print(f.read(3))
 
-# f.close() and reopening the file
-# will make it so that print(f.read(3)) returns to printing the first 3 characters of the text file
