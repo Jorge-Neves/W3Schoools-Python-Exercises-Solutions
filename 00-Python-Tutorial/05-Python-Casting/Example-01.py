@@ -1,5 +1,5 @@
 # type casting is a way to specify a type on to a variable
-# 
+#
 
 # os.system opens a new window
 
