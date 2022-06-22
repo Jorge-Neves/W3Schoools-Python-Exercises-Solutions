@@ -10,17 +10,26 @@ print(type(y))
 print(type(z))
 print(type(w))
 
-x = int(x)
-# x was originally an integer so it will remain an integer
+x = float(x)
+# x was originally an integer but with the float() constructor function will turn into a float number
 
-y = int(y)
+y = float(y)
 
-# y was originally a float number but the int() constructor function will turn it into an integer
+# y was originally a float number , so it will remain a float number
 
-z = int(z)
-# z was originally a string but the int() constructor function will turn it into an integer
+z = float(z)
+# z was originally a string but with the float() constructor function will turn it into a float number
+
+w = float(w)
+# w was originally a string but with the float() constructor function will turn into a float number
 
 print(type(x))
 print(type(y))
 print(type(z))
+print(type(w))
+
+print(x)
+print(z)
+
+# x and z will be 1.0 and 3.0 respectively instead of 1 and 3
 

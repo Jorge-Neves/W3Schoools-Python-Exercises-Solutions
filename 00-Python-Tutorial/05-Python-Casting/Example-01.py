@@ -9,7 +9,7 @@ print(type(y))
 print(type(z))
 
 x = int(x)
-# x was originally an integer so it will remain an integer
+# x was originally an integer, so it will remain an integer
 
 y = int(y)
 
