@@ -23,5 +23,4 @@ print(type(y))
 print(type(z))
 
 print(y)
-# y will be 2 instead of 2.8 after int()
-
+# y will be 2

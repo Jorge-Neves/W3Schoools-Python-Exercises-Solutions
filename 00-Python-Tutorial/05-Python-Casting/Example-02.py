@@ -1,10 +1,26 @@
-f = open("example-01.txt")
+# type casting is a way to specify a type on to a variable
 
-g = open("example-01.txt", "rt")
+x = 1
+y = 2.8
+z = "3"
+w = "4.2"
 
-print(f.read())
-print(g.read())
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(w))
 
-# g and both read the txt. file
-# "r" stands for read and "t" stands for text
+x = int(x)
+# x was originally an integer so it will remain an integer
+
+y = int(y)
+
+# y was originally a float number but the int() constructor function will turn it into an integer
+
+z = int(z)
+# z was originally a string but the int() constructor function will turn it into an integer
+
+print(type(x))
+print(type(y))
+print(type(z))
 
