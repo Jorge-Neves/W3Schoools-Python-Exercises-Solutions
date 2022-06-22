@@ -1,26 +1,24 @@
 # type casting is a way to specify a type on to a variable
 
-x = 1
-y = 2.8
-z = "3"
+x = "s1"
+y = 2
+z = 3.0
 
 print(type(x))
 print(type(y))
 print(type(z))
 
-x = int(x)
-# x was originally an integer so it will remain an integer
+x = str(x)
+# x was originally a string, so it will remain a string
 
-y = int(y)
+y = str(y)
 
-# y was originally a float number but the int() constructor function will turn it into an integer
+# y was originally an integer but the str() constructor function will turn it into a string
 
-z = int(z)
-# z was originally a string but the int() constructor function will turn it into an integer
+z = str(z)
+# z was originally a float number but the str() constructor function will turn it into a string
 
 print(type(x))
 print(type(y))
 print(type(z))
 
-print(y)
-# y will be 2
