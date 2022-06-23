@@ -1,9 +1,20 @@
-# Python does not have built in support for Arrays
-# Python Lists can be used instead.
-# To work with arrays in Python one can import a library, like the NumPy Library
-
 cars = ["Ford", "Volvo", "BMW"]
 
-# The cars array holds 3 values at the same time
-
 print(cars)
+
+# This array holds three values: "Ford", "Volvo", and "BMW"
+
+cars[0] = "Toyota"
+print(cars)
+
+# modifies value of the first array item
+
+cars[1] = "Suzuki"
+print(cars)
+
+# modifies the value of the second array item
+
+cars[2] = "Fiat"
+print(cars)
+
+# modifies the value of the third array item
