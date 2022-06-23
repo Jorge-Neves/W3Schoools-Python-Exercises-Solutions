@@ -1,9 +1,13 @@
-# Python does not have built in support for Arrays
-# Python Lists can be used instead.
-# To work with arrays in Python one can import a library, like the NumPy Library
-
 cars = ["Ford", "Volvo", "BMW"]
 
-# The cars array holds 3 values at the same time
+y = cars[2]
+print(y)
 
-print(cars)
+# The highest index of the array is the one that accesses the last item of the array
+# the highest array index for the cars array is 2
+
+x = len(cars)
+print(x)
+
+# The length of an array is always one more than the highest array index
+
