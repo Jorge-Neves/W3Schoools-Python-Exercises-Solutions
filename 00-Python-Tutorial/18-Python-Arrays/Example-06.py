@@ -5,9 +5,12 @@ print(cars)
 cars.append("Honda")
 
 print(cars)
-# The append method append() adds an element at the end of a list
+# The append() method adds an element at the end of a list because the default value is -1
+# However, an exact index can be specified
 
 cars.pop()
+
+print(cars)
 
 List = ["Toyota", "Suzuki", "Fiat"]
 
@@ -21,6 +24,7 @@ print(cars)
 cars.pop()
 
 print(cars)
+
 y = len(List)
 count = 0
 
